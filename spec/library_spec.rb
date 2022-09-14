@@ -17,8 +17,9 @@ RSpec.describe do
    expect(@dpl.authors).to eq([])
   end
 
-  xit 'can add authors to library' do
+  it 'can add authors to library' do
     charlotte_bronte = Author.new({first_name: "Charlotte", last_name: "Bronte"})
-    dpl.add_author
+    @dpl.add_author
+    require "pry";binding.pry
   end
 end
